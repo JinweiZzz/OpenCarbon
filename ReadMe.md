@@ -19,7 +19,9 @@ We conduct experiments on cities that span both developed and developing countri
 
 *Table 1: The summary statistics of our datasets.*
 
-Due to the size limit of github, we have stored the data in an anonymous google drive link: https://drive.google.com/drive/folders/1_HHa5X6nLiB4mHfEIn42jb5fwc64nf0v?usp=sharing. [Due to cloud storage limit, we only update the Beijing dataset. All other datasets are available through email requests.] Please download them and place them inside /data.
+Due to the size limit of github, we have stored the data in an anonymous google drive link: https://drive.google.com/drive/folders/1_HHa5X6nLiB4mHfEIn42jb5fwc64nf0v?usp=sharing. 
+[Due to cloud storage limit, we only update the Beijing dataset. All other datasets are available through email requests.] 
+Please download them and place them inside /data.
 
 ## Installation
 ### Environment
