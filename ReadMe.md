@@ -5,7 +5,7 @@ OpenCarbon: A Multi-level Neural Approach for High-Resolution Carbon Emission Pr
 
 ## Overall architecture
 This work aims to construct a prediction framework that predicts high-resolution carbon emissions with open data of satellite images and POI. 
-![Overall framework](framework.pdf)
+![Overall framework](framework.png)
 
 
 ## Data
