@@ -17,6 +17,7 @@ We conduct experiments on cities that span both developed and developing countri
 | GDP pc ($)  | 71k          | 27k         | 12k        |
 | POI Source  | SafeGraph    | Map Service | Map Service|
 | Target Year | 2018         | 2018        | 2019       |
+
 *Table 1: The summary statistics of our datasets.*
 
 Due to the size limit of github, we have stored the data in an anonymous google drive link: https://drive.google.com/drive/folders/1_HHa5X6nLiB4mHfEIn42jb5fwc64nf0v?usp=sharing. 
