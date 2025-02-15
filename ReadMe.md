@@ -38,15 +38,15 @@ Configs for performance reproductions on all datasets.
 
 ### London
 ```
-python main_contrastive.py --city london --batch_size 32 --lr 1e-3 --epochs 3000 --contrastive 1 --alpha 0.001
+python main_contrastive.py --city london --batch_size 32 --lr 1e-3 --epochs 3000 --contrastive 1 --alpha 0.001 --neighbor_size 1
 ```
 
 ### Beijing
 ```
-python main_contrastive.py --city beijing --batch_size 32 --lr 1e-3 --epochs 3000 --contrastive 1 --alpha 0.001
+python main_contrastive.py --city beijing --batch_size 32 --lr 1e-3 --epochs 3000 --contrastive 1 --alpha 0.001 --neighbor_size 1
 ```
 
 ### Yinchuan
 ```
-python main_contrastive.py --city yinchuan --batch_size 32 --lr 5e-4 --epochs 3000 --contrastive 1 --alpha 0.01
+python main_contrastive.py --city yinchuan --batch_size 32 --lr 5e-4 --epochs 3000 --contrastive 1 --alpha 0.01 --neighbor_size 1
 ```
