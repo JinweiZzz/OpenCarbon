@@ -1,7 +1,7 @@
 # OpenCarbon
 
 This repo is the official implementation for the paper   
-OpenCarbon: A Multi-level Neural Approach for High-Resolution Carbon Emission Prediction with Multi-modality Open Data
+OpenCarbon: A Contrastive Learning-based Cross-Modality Neural Approach for High-Resolution Carbon Emission Prediction Using Open Data
 
 ## Overall architecture
 This work aims to construct a prediction framework that predicts high-resolution carbon emissions with open data of satellite images and POI. 
@@ -9,14 +9,14 @@ This work aims to construct a prediction framework that predicts high-resolution
 
 
 ## Data
-We conduct experiments on cities that span both developed and developing countries, including New York, London, and Beijing. Summary of the datasets are presented:
+We conduct experiments on cities that span both developed and developing countries, including London, Beijing, and Yinchuan. Summary of the datasets are presented:
 
-| Region         | Area      | POI Source   | Target Year | #POI Categories |
-| -------------- | --------- | ------------ | ----------- | --------------- |
-| Beijing        | 1381 km²  | Tencent Map  | 2018        | 14              |
-| Great London   | 778 km²   | SafeGraph    | 2018        | 14              |
-| New York City  | 1569 km²  | SafeGraph    | 2019        | 15              |
-
+| Region      | Great London | Beijing     | Yinchuan   |
+|-------------|-------------:|------------:|-----------:|
+| Area        | 778 km²      | 1381 km²    | 475 km²    |
+| GDP pc ($)  | 71k          | 27k         | 12k        |
+| POI Source  | SafeGraph    | Map Service | Map Service|
+| Target Year | 2018         | 2018        | 2019       |
 *Table 1: The summary statistics of our datasets.*
 
 Due to the size limit of github, we have stored the data in an anonymous google drive link: https://drive.google.com/drive/folders/1_HHa5X6nLiB4mHfEIn42jb5fwc64nf0v?usp=sharing. 
@@ -35,17 +35,17 @@ Please download them and place them inside /data.
 Configs for performance reproductions on all datasets. 
 
 
-### Beijing
-```
-python main.py --lr 5e-5 --batch_size 32 --city beijing --neighbor_size 3
-```
-
-### New York
-```
-python main.py --lr 1e-5 --batch_size 32 --city london --neighbor_size 3
-```
-
 ### London
 ```
-python main.py --lr 5e-5 --batch_size 16 --city newyork --neighbor_size 5
+python main_contrastive.py --city london --batch_size 32 --lr 1e-3 --epochs 3000 --contrastive 1 --alpha 0.001
+```
+
+### Beijing
+```
+python main_contrastive.py --city beijing --batch_size 32 --lr 1e-3 --epochs 3000 --contrastive 1 --alpha 0.001
+```
+
+### Yinchuan
+```
+python main_contrastive.py --city yinchuan --batch_size 32 --lr 5e-4 --epochs 3000 --contrastive 1 --alpha 0.01
 ```
