@@ -1,6 +1,6 @@
 # OpenCarbon
 
-This repo is the official implementation for the paper   
+This repo is the official implementation for IJCAI 2025 paper:
 OpenCarbon: A Contrastive Learning-based Cross-Modality Neural Approach for High-Resolution Carbon Emission Prediction Using Open Data
 
 ## Overall architecture
